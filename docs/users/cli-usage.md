@@ -140,8 +140,8 @@ ddev config --project-type=drupal8 --docroot=web --create-docroot
 ddev start
 ddev composer create "drupal/recommended-project:^8"
 ddev composer require drush/drush
-ddev drush site:install -y
-ddev drush uli
+ddev exec drush site:install -y
+ddev exec drush uli
 ddev launch
 ```
 
